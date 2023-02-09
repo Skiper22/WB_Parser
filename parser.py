@@ -14,7 +14,7 @@ scopes = [
 ]
 
 #creds = ServiceAccountCredentials.from_json_keyfile_name("\\Users\\kantemirtemirkanov\\PycharmProjects\\WB_parser\\key.json", scopes=scopes)
-creds = ServiceAccountCredentials.from_json_keyfile_name("/Users/kantemirtemirkanov/PycharmProjects/WB_parser/key.json", scopes= scopes )
+creds = ServiceAccountCredentials.from_json_keyfile_name("/WB_Parser/key.json", scopes= scopes )
 
 file = gspread.authorize(creds)
 work_book = file.open("WB_pars")
